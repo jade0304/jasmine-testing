@@ -7,9 +7,13 @@ function calculateTaxes(income){
   }
 }
 
+function removeDupes(values){
+  const arr = [...new Set (values)]
+  if (typeof values === 'string') return arr.join('')
+return arr;
+}
 
-
-
+'hello' -> 'helo'
 
 
 
