@@ -6,4 +6,5 @@ it ('should calculate low-tax bracket', function(){
   expect(calculateTaxes(10000)).toEqual(1500);
   expect(calculateTaxes(1000)).toEqual(150);
   expect(calculateTaxes(0)).toEqual(0);
+
 })
