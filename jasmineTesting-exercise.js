@@ -23,12 +23,12 @@ function remove(arr, val) {
 }
 
 
-// const usernames = [];
-// let input = document.getElementById("username");
+const usernames = [];
+let input = document.getElementById('username');
 
-// function submitForm() {
-//   usernames.push(input.value);
-// }
+function submitForm() {
+  usernames.push(input.value);
+}
 
 // function append(arr, val){
 //   arr.push(val);

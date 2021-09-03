@@ -32,13 +32,17 @@
  })
 
   
-// describe('submitForm() tests', () => {
-// it ('saves input val to usernames array', function(){
-//   input.value = 'chickenGal';
-//   submitForm();
-//   expect(usernames.length).toBe(1)
-//   expect(usernames).toContain('chickenGal')
-// })
+describe('submitForm() tests', () => {
+it ('saves input val to usernames array', () => {
+  input.value = 'chickenGal';
+  submitForm();
+  expect(usernames.length).toBe(1)
+  expect(usernames).toContain('chickenGal')
+});
+
+})
+
+
 // it ('saves long usernames', () =>{
 //   input.value = 'i am a panda luvr';
 //   submitForm();
