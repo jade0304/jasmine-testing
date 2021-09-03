@@ -39,17 +39,15 @@ it ('saves input val to usernames array', () => {
   expect(usernames.length).toBe(1)
   expect(usernames).toContain('chickenGal')
 });
-
+it ('saves long usernames', () =>{
+  input.value = 'i am a panda luvr';
+  submitForm();
+  expect(usernames.length).toBe(1)
+})
 })
 
+afterEach(function(){
+input.value = '';
+usernames = [];
+})
 
-// it ('saves long usernames', () =>{
-//   input.value = 'i am a panda luvr';
-//   submitForm();
-//   expect(usernames.length).toBe(1)
-// })
-// })
-// afterEach(function() {
-//   input.value = '';
-//   usernames = [];
-// })

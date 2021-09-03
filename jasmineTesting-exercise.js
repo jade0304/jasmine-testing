@@ -23,7 +23,7 @@ function remove(arr, val) {
 }
 
 
-const usernames = [];
+let usernames = [];
 let input = document.getElementById('username');
 
 function submitForm() {
